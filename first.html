@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First</title>
+</head>
+<body>
+
+    <label>What language was created to add interactivity to the Web? <input class="lang" type="text"></input></label>
+   
+
+    <script>
+        
+        let test = document.querySelector(".lang");
+        test.addEventListener('focusout',
+            (event) => { 
+                alert("You said " + test.value);
+             });
+
+        
+        let lib= prompt("What code library would you prefer? Choose between Vue, React, or jQuery.");
+        alert("Your preferred code library is: " + lib);
+    </script>
+
+</body>
+</html>
